@@ -9,6 +9,11 @@
   font-optical-sizing: auto;
 
 }
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 .logo h2 {
     font-size: 45px;
     font-weight: 900;
@@ -275,4 +280,69 @@ margin-bottom: 40px;
 border: none;
 border-radius: 5px;
 color: #757575;
+}
+
+/* media query */
+@media screen and (max-width:576px) {
+.container {
+    width: 95%;
+}
+.section-heading h2 {
+font-size: 30px;
+}
+   
+#about .about-content {
+    padding: 20px;
+}
+nav {
+    gap: 20px
+}
+nav .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#banner {
+    margin: 20px;
+    gap: 20px;
+    text-align: center;
+}
+#banner  .banner-image img {
+    width: 100%;
+}
+#banner .banner-content h1 {
+    font-size: 44px;
+}
+#about, #skills, #resume {
+    padding-top: 60px;
+
+}
+.btn-group {
+    justify-content: center;
+}
+#about .about-content .about-info {
+    gap: 30px;
+}
+#skills .skills-content .skill-box, #about .about-content .about-info, .footer-content, #resume .resume-content, nav, #banner {
+    flex-direction: column;
+}
+header {
+   
+    background: url(../images/header_bg.png), #FFF8F3;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  
+}
+.skill-box .skill-card {
+    max-width: 100%;
+}
+#resume .resume-content {
+    margin-top: 60px;
+}
+.resume-card {
+    margin-right: 10px;
+}
+.footer-content form input[type="text"], .footer-content form textarea {
+    width: 100%;
+}
+
 }
